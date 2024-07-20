@@ -5,9 +5,9 @@
 <p>This website is an extension of my resume, providing more details about my Cisco Technical Internship experience. I was responsible for building a RAG/LLM AI chat bot system, namd build assistant bot, that helps with bug fix. I'm still editing this web and new contents are coming up, stay tuned ...</p>
 
 <ul>
-  <li>At the <b>LLM server</b>, we use retrieval augmented generation (RAG) that retrieves first relevant documents, and then formulates the prompt for LLM generation.</li>
+  <li>At the <b>LLM server</b>, we used retrieval augmented generation (RAG) that retrieves first relevant documents, and then formulates the prompt for LLM generation.</li>
   <li><b>The bot server</b> is a HTTPS server that acts as the gateway for LLM functionality.</li>
-  <li></li>
+  <li>We also enabled <b>multiprocessing cababilities</b> for processing queries in parallel. As each query typically takes around 20-30 sec to run LLM, reducing waiting time when multiple users invoke the bot simutaneously is crucial. This is realized by the worker pool in Python.</li>
 </ul>
 </body>
 </html>
