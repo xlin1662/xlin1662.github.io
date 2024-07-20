@@ -8,6 +8,7 @@
   <li>At the <b>LLM server</b>, we used retrieval augmented generation (RAG) that retrieves first relevant documents, and then formulates the prompt for LLM generation.</li>
   <li><b>The bot server</b> is a HTTPS server that acts as the gateway for LLM functionality.</li>
   <li>We also enabled <b>multiprocessing cababilities</b> for processing queries in parallel. As each query typically takes around 20-30 sec to run LLM, reducing waiting time when multiple users invoke the bot simutaneously is crucial. This is realized by the worker pool in Python.</li>
+  <li>The final stage is <b>deployment</b>.</li>
 </ul>
 </body>
 </html>
